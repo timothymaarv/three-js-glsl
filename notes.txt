@@ -1,0 +1,49 @@
+Shaders determine how our objects look on the screen, with regards to vertex positioning and vertex color
+
+THREE JS materials are already shaders made by three.js
+
+Two ways to sharpen rendering
+
+antialias
+renderer pixel ratio
+
+
+vertex shader will run for every vertex in the mesh
+
+
+gl Position = [1, 0, 0, 1] => last point for translate/transform
+x, y, z, transform/translate or w
+
+vec4(1, 0, 0, 1)
+
+fragment shaders fill the space in between => go through the vertices in between and change their colors(looping over colors?)
+
+
+gl FragColor = [1, 0, 0, 1] => last point for alpha
+
+r, g, b, a
+
+
+webgl program threejs
+
+projectionMatrix * modelViewMatrix * vec4(position, 1) => matrix data types
+
+
+
+matrix => array organised in a specific manner
+
+matrix = [  -1, 0, 0, 
+            0, 1, 0,
+            0, 0, 1
+        ]
+
+uniforms => props, imports
+
+normal is data that represents the direction a vertex is facing
+vertex data:
+position(where on the screen it is)
+normal(direction it is facing) [x, y, z]
+uv(position if unwrapped onto 2D surface)
+
+
+using tailwind without PostCSS

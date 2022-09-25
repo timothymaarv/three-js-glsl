@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Lato:ital@0;1&display=swap');
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  place-content: center;
+}
+
+#container{
+  width: 50%;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 32px;
+  gap: 32px;
+  max-width: 500px;
+  background-color: transparent;
+}
+
+h1{
+  font-family: 'Exo';
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 32px;
+}
+
+p{
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato";
+  color: grey;
+}
+
+button{
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 24px 32px;
+  margin: 0;
+  font-size: 16px;
+  border-radius: 50px;
+  max-width: max-content;
+  font-family: "Lato";
+}
+
+@media screen and (max-width: 1000px) {
+  .app{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #container{
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .content{
+    margin-top: 62px;
+    padding: 48px 32px;
+    max-width: 300px;
+    width: 100vw;
+    place-self: center;
+    text-align: center;
+    align-content: center;
+  }
+
+  button{
+    place-self: center;
+  }
+
+}
